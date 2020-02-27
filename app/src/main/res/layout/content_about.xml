@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.sfera.Stock_IV.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/about_content"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/sfera"
+                android:textSize="7pt"
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:src="@mipmap/sferalogo"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/disclaimer"
+                android:layout_marginTop="0dp"
+                android:text="@string/disclaimer"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="7pt"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/support"
+                android:layout_marginTop="0dp"
+                android:text="@string/Support"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="7pt"
+                android:textColor="@android:color/white"/>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:src="@mipmap/ether"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/nano"
+                android:text="@string/NANO"
+                android:gravity="center_horizontal"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="5pt"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/buttonCopy"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button2"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/Copy"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="6pt"
+                android:onClick="copyClick"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

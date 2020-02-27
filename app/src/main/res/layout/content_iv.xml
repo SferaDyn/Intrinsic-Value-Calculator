@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.sfera.Stock_IV.IVActivity"
+    tools:showIn="@layout/activity_iv">
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/scrollView"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <EditText
+                android:id="@+id/CBV"
+                android:layout_width="369dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:hint="@string/new_book_value"
+                android:inputType="number|numberDecimal|numberSigned"
+                android:onClick="cbv_click"
+                android:singleLine="true"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColorHint="#F6F6F6"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/ABV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal|numberSigned"
+                android:ems="10"
+                android:hint="@string/compound_change_in_nbook_value_per_year"
+                android:onClick="acb_click"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColorHint="#F6F6F6"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/DRY"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:ems="10"
+                android:hint="@string/average_yearly_dividend_n_over_the_next_10_years"
+                android:onClick="dry_click"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColorHint="#F6F6F6"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/FED"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:ems="10"
+                android:hint="@string/_10_year_federal_note_n_discount_rate"
+                android:onClick="fed_click"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColorHint="#F6F6F6"
+                android:textColor="@android:color/white"/>
+
+
+            <EditText
+                android:id="@+id/DRMcalc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:ems="10"
+                android:layout_marginTop="84dp"
+                android:hint="@string/calculate"
+                android:clickable="true"
+                android:onClick="drmValue"
+                android:focusable="false"
+                android:fontFamily="@font/ubuntu"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColorHint="#F6F6F6"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

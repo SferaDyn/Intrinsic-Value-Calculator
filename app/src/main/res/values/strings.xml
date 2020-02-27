@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Stock_IV</string>
+    <string name="action_settings">Settings</string>
+    <string name="compound_rate_calculator">Compound Rate Calculator</string>
+    <string name="intrinsic_value_calculator">Intrinsic Value Calculator</string>
+    <string name="about">About</string>
+    <string name="title_activity_compound">CompoundActivity</string>
+    <string name="title_activity_iv">IVActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="new_book_value">Current Book Value ($) </string>
+    <string name="old_book_value">Old Book Value ($) </string>
+    <string name="of_years_between_book_values"># of years between Book Values </string>
+    <string name="calculate">Calculate</string>
+    <string name="yearChangeBV">Avg. Book Value Change Per Year (%): </string>
+    <string name="compundBVchange">Compound BV Change Per Year (%): NaN</string>
+    <string name="newBookValue">New Book Value ($):</string>
+    <string name="numYearbetBook"># Years between Book Values: </string>
+    <string name="olbBookValue">Old Book Value ($): </string>
+    <string name="current_book_value">Current Book Value ($)</string>
+    <string name="compound_change_in_nbook_value_per_year">Average Change in \nBook Value Per Year (%)</string>
+    <string name="average_yearly_dividend_n_over_the_next_10_years">Average Yearly Dividend ($)\n(Over the next 10 years)</string>
+    <string name="_10_year_federal_note_n_discount_rate">10 Year Federal Note (%)\n(Discount Rate)</string>
+    <string name="graham_intrinsic_value">Graham Intrinsic Value</string>
+    <string name="title_activity_graham">grahamActivity</string>
+    <string name="earnings_per_share">Earnings per share ($)</string>
+    <string name="about_content">\n The intrinsic value of a stock is defined here as the amount of
+                money that is generated over the lifetime of a business, related to the current book
+                value. This is calculated by a summation of the dividends received and the annual
+                compound change in book value over the next 10 years. The value obtained is discounted using the 10 year
+                US Treasury Note (the discount rate) to obtain a value in today\'s money.\n\n To do this,
+                input the current book value per share and the average expected change in book value
+                per year (the compound rate). \n\n A good
+                place to start is to look at the previous 10 years and take the average yearly change in
+                book value. However, this method works best for companies with stable earnings. The 4-Traders
+                website has information regarding past and future projections of book values based on analyst data.
+                The compound rate can be calculated via the Compound Rate Calculator (included).\n\n
+                Input the amount of dividends received in 1 year but keep in mind this value will be used as the dividends
+                for the next 10 years.\n\n
+                The current 10 year US Treasury Note is listed on the Yahoo Finance
+                website as the \'10-Yr Bond\'.\n\n
+                Click \'Calculate\' to obtain the intrinsic value.\n\n</string>
+    <string name="GoodLuck">\n<b>Good Luck!\n\n\n</b></string>
+    <string name="sfera">\nIntrinsic Value Calculator
+                \nVersion 1.1
+                \nby
+                \nSfera Dynamics, 2018</string>
+    <string name="disclaimer">\nDisclaimer\n\nCalculations are based on general formulas used worldwide and
+                accuracy is not guaranteed.</string>
+    <string name="graham_about_content">\n This is a modified formula of the Benjamin Graham method
+        to account for high growth rate stocks as proposed by Jae Jun at \n
+        https://www.oldschoolvalue.com/blog/valuation-methods/value-stocks-benjamin-graham-formula/\n\n
+Note that Jae Jun recommends using a 20 year A corporate rate for a more conservative intrinsic value.\n\n</string>
+    <string name="title_activity_how_to">HowToActivity</string>
+    <string name="further_information">Further Information</string>
+    <string name="Support">\n\nDonate</string>
+    <string name="NANO"><i>0x53A7e1799A5D0648ED85d6302702df5cA4E34C46\n</i></string>
+    <string name="version">Version 1.1 (2018)</string>
+    <string name="Copy">Copy</string>
+</resources>
